@@ -1,0 +1,7 @@
+interface:
+  display_name: "Archify Maintenance"
+  short_description: "Manually sync upstream and review the custom branch PR"
+  default_prompt: "Use $archify-maintenance to manually sync Archify upstream and prepare the joey-custom PR."
+
+policy:
+  allow_implicit_invocation: false

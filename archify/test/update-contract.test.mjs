@@ -51,7 +51,7 @@ test('shared release constants identify the only trusted updater source', () => 
   assert.equal(EXPECTED_REPOSITORY, 'https://github.com/tt-a1i/archify');
   assert.equal(
     DEFAULT_MANIFEST_URL,
-    'https://tt-a1i.github.io/archify/skill-updates/archify/stable.json',
+    'https://raw.githubusercontent.com/Joey-Tools/archify/joey-custom/docs/skill-updates/archify/stable.json',
   );
 });
 
