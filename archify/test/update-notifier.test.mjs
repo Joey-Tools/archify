@@ -19,7 +19,7 @@ const skillRoot = path.resolve(here, '..');
 const checkerPath = path.join(skillRoot, 'scripts', 'check-update.mjs');
 const contractPath = path.join(skillRoot, 'scripts', 'update-contract.mjs');
 const expectedRepository = 'https://github.com/tt-a1i/archify';
-const expectedManifestUrl = 'https://tt-a1i.github.io/archify/skill-updates/archify/stable.json';
+const expectedManifestUrl = 'https://raw.githubusercontent.com/Joey-Tools/archify/joey-custom/docs/skill-updates/archify/stable.json';
 const baseTime = Date.parse('2026-08-28T08:00:00Z');
 const childCheckTimeoutMs = 2_000;
 const parentCheckTimeoutMs = 5_000;
@@ -432,7 +432,7 @@ function assertUnsafeCacheStateIsIgnored(testFixture) {
   });
 }
 
-test('production manifest URL is a fixed trusted GitHub Pages resource', () => {
+test('production manifest URL is a fixed trusted fork-default-branch resource', () => {
   assert.equal(DEFAULT_MANIFEST_URL, expectedManifestUrl);
   const local = JSON.parse(fs.readFileSync(path.join(skillRoot, 'skill-release.json'), 'utf8'));
   assert.equal(local.updateManifestUrl, expectedManifestUrl);

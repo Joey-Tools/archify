@@ -6,5 +6,5 @@
   "source": {
     "repository": "https://github.com/tt-a1i/archify"
   },
-  "updateManifestUrl": "https://tt-a1i.github.io/archify/skill-updates/archify/stable.json"
+  "updateManifestUrl": "https://raw.githubusercontent.com/Joey-Tools/archify/joey-custom/docs/skill-updates/archify/stable.json"
 }
